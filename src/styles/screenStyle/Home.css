@@ -1,0 +1,53 @@
+.HomeBody {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.SeatAllocationText {
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.HomeTop {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+  flex-direction: column;
+  width: 95%;
+}
+.HeaderData {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: row;
+  gap: 60%;
+  width: 100%;
+  height: 100%;
+  border: 1px black solid;
+}
+#seatHeader {
+  font-size: large;
+
+  color: #9510ac;
+}
+.HeaderData h1 {
+  font-size: 900;
+}
+.HomeBottom {
+  /* border: 1px solid black; */
+  flex: 1.5;
+}
+.logoutContainer {
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}

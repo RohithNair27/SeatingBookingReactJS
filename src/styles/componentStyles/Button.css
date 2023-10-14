@@ -1,0 +1,21 @@
+.btn-submit {
+  background-color: #3f53d9;
+  border: none;
+  margin-left: 5%;
+  width: 20%;
+  min-width: 90px;
+  height: 100%;
+  border-radius: 7px;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-submit:hover {
+  background-color: #3a4068;
+}
+.btn-submit p {
+  text-align: center;
+}
