@@ -4,6 +4,7 @@
   background-color: white;
   display: flex;
   align-items: center;
+
   justify-content: center;
   flex-direction: column;
 }
@@ -27,4 +28,14 @@
   justify-content: center;
   /* border: 1px black solid; */
   /* text-align: center; */
+}
+
+.touchable-button {
+  margin-top: 8%;
+  color: rgb(89, 107, 178);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
 }

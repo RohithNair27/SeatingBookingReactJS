@@ -1,13 +1,9 @@
 import ReactRouters from "./navigation/ReactRouters";
-// import { BrowserRouter } from "react-router-dom";
-import LoginScreen from "./screens/LoginScreen";
 import Home from "./screens/Home";
+import LoginScreen from "./screens/LoginScreen";
+import "./styles/Global.css";
 function App() {
-  return (
-    <>
-      <ReactRouters />
-    </>
-  );
+  return <ReactRouters />;
 }
 
 export default App;

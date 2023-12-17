@@ -1,0 +1,59 @@
+.Zonecard-body {
+  position: relative;
+  top: 3%;
+  width: 25%;
+  height: 19%;
+  background-color: #e6e6e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Zonecard-button-selected {
+  height: 85%;
+  width: 95%;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 8%;
+  padding-top: 5%;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+.Zonecard-button {
+  height: 85%;
+  width: 95%;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 8%;
+  padding-top: 5%;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+.Zonecard-icons {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  width: 60%;
+}
+.Zonecard-info {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.Zonecard-info span {
+  font-weight: 600;
+  font-size: small;
+  color: gray;
+}
+p {
+  font-size: larger;
+  font-weight: 700;
+  margin: 0;
+}

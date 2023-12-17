@@ -1,0 +1,45 @@
+.InfoCard-body {
+  padding: 1%;
+  width: 30%;
+  height: 35%;
+  background-color: #f4e6f6;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cancelButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #fff;
+  border-color: #f79988;
+  width: 30%;
+  height: 20%;
+  color: #f79988;
+}
+.InfoCard-infoBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+}
+.InfoCard-infoBody span {
+  font-weight: 700;
+}
+
+.InfoCard-infoBody span span {
+  font-weight: 500;
+}
+.InfoCard-switch {
+  height: 40%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+}
+.InfoCard-switch span {
+  font-size: x-large;
+  font-weight: 700;
+}

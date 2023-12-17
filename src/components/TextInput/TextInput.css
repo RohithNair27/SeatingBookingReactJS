@@ -1,0 +1,17 @@
+h1 {
+  font-weight: 900;
+}
+/* h3 {
+  font-weight: 400;
+  color: #2d9bf0;
+} */
+.textInput {
+  width: 60%;
+  min-width: 150px;
+  height: 30%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px #e3e3e3 solid;
+  padding-left: 10px;
+  outline: none;
+}

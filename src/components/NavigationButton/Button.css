@@ -1,0 +1,28 @@
+.btn-submit-gray,
+.btn-submit {
+  background-color: #3f53d9;
+  border: none;
+  margin-left: 5%;
+  width: 20%;
+  min-width: 90px;
+  height: 100%;
+  border-radius: 7px;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-submit-gray {
+  background-color: #666666;
+  font-size: small;
+  border-radius: 17px;
+}
+.btn-submit:hover {
+  background-color: #3a4068;
+}
+.btn-submit .btn-submit p {
+  text-align: center;
+}

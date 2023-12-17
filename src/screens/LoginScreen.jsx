@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../styles/screenStyle/LoginScreen.css";
-import TextInput from "../components/TextInput";
-import Button from "../components/NavigationButton";
+import TextInput from "../components/TextInput/TextInput";
+import Button from "../components/NavigationButton/NavigationButton";
+import { Link } from "react-router-dom";
 import {
   EMAIL_PLACEHOLDER,
   PASSWORD_PLACEHOLDER,
@@ -49,14 +50,19 @@ function LoginScreen() {
           />
         </div>
         <div className="buttonsContainer">
-          <Button placeHolder="Log In" isNavigate={true} />
+          <Button
+            placeHolder="Log In"
+            isNavigate={true}
+            className={"btn-submit"}
+          />
           <Button
             placeHolder="Clear"
             isNavigate={false}
             onPress={onClearData}
+            className={"btn-submit"}
           />
         </div>
-        <h3>Forgot Password?</h3>
+        <Link className="touchable-button">Forgot Password?</Link>
       </div>
     </>
   );
