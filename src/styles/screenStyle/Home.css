@@ -3,6 +3,7 @@
   bottom: 0;
   height: 77%;
   width: 99%;
+  border: 1px black solid;
 }
 .homeBodyCircle {
   position: absolute;

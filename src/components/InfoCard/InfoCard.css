@@ -1,13 +1,29 @@
 .InfoCard-body {
-  padding: 1%;
   width: 30%;
   height: 35%;
+
   background-color: #f4e6f6;
-  display: flex;
-  flex-direction: column;
+
   position: relative;
 }
+.InfoCard-body.seatBooking {
+  margin-bottom: 0.5%;
+  width: 90%;
+  height: 30%;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.InfoCard-body.availableColor {
+  margin-bottom: 0.5%;
+  width: 90%;
+  height: 30%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .cancelButton {
   position: absolute;
   top: 15px;
@@ -42,4 +58,19 @@
 .InfoCard-switch span {
   font-size: x-large;
   font-weight: 700;
+}
+.InfoCard-switch-button-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.InfoCard-switch-button {
+  border: none;
+  background-color: #414bb2;
+  color: #fff;
+  position: absolute;
+  width: 150px; /* Set to a fixed pixel value */
+  height: 50px; /* Set to a fixed pixel value */
+  border-radius: 30px; /* Set to half of the smaller dimension (width or height) */
+  right: 5%;
 }

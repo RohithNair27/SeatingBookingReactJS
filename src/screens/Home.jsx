@@ -24,6 +24,7 @@ function Home() {
 
       <div className="HomeElements">
         <InfoCard selectedSeatData={BookedSeatData} />
+
         {ZoneData.map((element) => {
           return (
             <ZoneCard

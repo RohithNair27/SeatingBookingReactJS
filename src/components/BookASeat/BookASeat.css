@@ -1,0 +1,73 @@
+.BookASeatBody {
+  /* border: 1px black solid; */
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.BookASeatBody h1 {
+  font-size: x-large;
+  font-weight: 750;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
+.BookASeatBody label {
+  font-weight: 750;
+}
+.DropDown-bookseat {
+  position: relative;
+  top: 10%;
+  width: 40%;
+  height: 8%;
+  align-items: center;
+  display: flex;
+}
+.DropDown-bookseat > * {
+  flex: 1;
+}
+.DropDowns-two > * {
+  width: 41%;
+  height: 40px;
+  margin-right: 4px;
+  border: 2px lightgray solid;
+  color: gray;
+}
+.Drop-down > * {
+  width: 100%;
+  height: 40px;
+  border: 2px lightgray solid;
+}
+.BookSeatsButtonBody {
+  position: relative;
+  width: 40%;
+  height: 12%;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.BookSeatsButtonBody button {
+  width: 20%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+}
+
+#button-1 {
+  width: 30%;
+  background-color: #414bb2;
+  color: white;
+}
+#button-2 {
+  width: 25%;
+  background-color: #9510ac;
+  color: white;
+}
+#button-3 {
+  width: 25%;
+  background-color: #f24726;
+  color: white;
+}
