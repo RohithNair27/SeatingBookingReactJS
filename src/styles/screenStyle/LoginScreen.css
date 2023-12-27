@@ -8,6 +8,9 @@
   justify-content: center;
   flex-direction: column;
 }
+.loginContainer h1 {
+  font-size: x-large;
+}
 .buttonsContainer {
   /* border: 1px solid black; */
   margin-top: 2%;
@@ -26,8 +29,6 @@
   height: 30%;
   align-items: center;
   justify-content: center;
-  /* border: 1px black solid; */
-  /* text-align: center; */
 }
 
 .touchable-button {

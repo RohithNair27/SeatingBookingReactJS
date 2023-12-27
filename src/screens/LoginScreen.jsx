@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "../styles/screenStyle/LoginScreen.css";
 import TextInput from "../components/TextInput/TextInput";
 import Button from "../components/NavigationButton/NavigationButton";
-import { Link } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthContext/AuthContext";
 import {
   EMAIL_PLACEHOLDER,
   PASSWORD_PLACEHOLDER,
 } from "../constants/staticTextKeyConstant";
+import { useNavigate } from "react-router-dom";
 function LoginScreen() {
+  const Navigate = useNavigate();
+  const { isAuth, onClickLogin } = useContext(AuthContext);
   const [userData, setUserData] = useState({
     email: "",
     password: "",
   });
-
+  const [isLoading, setIsLoading] = useState(false);
   const onTypeUserData = (event) => {
     const { value, type } = event.target;
 
@@ -31,11 +34,21 @@ function LoginScreen() {
       password: "",
     });
   };
+  const onPressLogin = async (event) => {
+    setIsLoading(true);
+    await onClickLogin(event, userData.email, userData.password);
+    setIsLoading(false);
+  };
+  useEffect(() => {
+    if (isAuth) {
+      Navigate("/home");
+    }
+  }, [isAuth]);
   return (
     <>
       <div className="loginContainer">
         <h1>Log In</h1>
-        <div className="textInputContiner">
+        <form className="textInputContiner">
           <TextInput
             value={userData.email}
             placeholder={EMAIL_PLACEHOLDER}
@@ -48,21 +61,20 @@ function LoginScreen() {
             type="password"
             onType={onTypeUserData}
           />
-        </div>
+        </form>
         <div className="buttonsContainer">
           <Button
             placeHolder="Log In"
-            isNavigate={true}
             className={"btn-submit"}
+            onPress={onPressLogin}
           />
           <Button
             placeHolder="Clear"
-            isNavigate={false}
             onPress={onClearData}
             className={"btn-submit"}
           />
         </div>
-        <Link className="touchable-button">Forgot Password?</Link>
+        <button className="touchable-button">Forgot Password?</button>
       </div>
     </>
   );

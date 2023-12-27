@@ -1,9 +1,12 @@
 import ReactRouters from "./navigation/ReactRouters";
-import Home from "./screens/Home";
-import LoginScreen from "./screens/LoginScreen";
+import AuthProvider from "./contexts/AuthContext/AuthProvider";
 import "./styles/Global.css";
 function App() {
-  return <ReactRouters />;
+  return (
+    <AuthProvider>
+      <ReactRouters />;
+    </AuthProvider>
+  );
 }
 
 export default App;
